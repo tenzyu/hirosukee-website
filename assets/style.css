@@ -1,0 +1,100 @@
+/**
+ * Base Styles
+ * The overall tags style is written here. 
+ */
+body {
+  font-family: "Helvetica Neue", "Arial", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "sans-serif";
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* no highlighting */
+}
+
+
+
+/**
+ * Layout Styles
+ * The style of the chunk position is written here.
+ */
+
+
+
+/**
+ * Component Styles
+ * The component style is written here.
+ */
+.bio-icon {
+  max-height: 128px;
+  max-width: 128px;
+  min-height: 64px;
+  min-width: 64px;
+}
+
+.link-icon {
+  max-height: 128px;
+  max-width: 128px;
+  min-height: 64px;
+  min-width: 64px;
+}
+
+
+
+/**
+ * State Styles
+ * The style involved in the state is written here.
+ */
+
+
+
+/**
+ * Theme Styles
+ * The style of the theme, mainly related to color is written here.
+ */
+a {
+  color: #000;
+}
+
+
+/**
+ * Responsive Styles
+ * The style for responsive design is written here.
+ */
+
+/* Mobile S */
+@media only screen and (max-device-width : 320px) {
+}
+
+/* Mobile M */
+@media only screen and (min-device-width : 321px) and (max-device-width : 375px) {
+}
+
+/* Mobile L */
+@media only screen and (min-width : 376px) and (max-width : 425px) {
+}
+
+/* Tablet */
+@media only screen and (min-width : 426px) and (max-width : 768px) {
+}
+
+/* LapTop */
+@media only screen and (min-width : 769px) and (max-width : 1024px) {
+}
+
+
+/* LapTop L */
+@media only screen and (min-width : 1025px) {
+}
