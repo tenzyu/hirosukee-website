@@ -1,12 +1,14 @@
 /**
- * Base Styles
- * The overall tags style is written here. 
+ * ベース
+ * 全体的なタグのスタイルはここに書きます。
  */
 body {
-  font-family: "Helvetica Neue", "Arial", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "sans-serif";
+  --background-color: rgb(253, 253, 253);
+  font-family: "Microsoft JhengHei UI", "Arial", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "sans-serif";
 }
 
 a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* no highlighting */
   text-decoration: none;
 }
 
@@ -20,81 +22,225 @@ img {
   width: 100%;
 }
 
-a {
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* no highlighting */
+
+
+/**
+ * レイアウト
+ * 大きなレイアウトのスタイルはここに書きます。
+ */
+header {
+  align-items: center;
+  display: flex;
+  height: 63px;
+  left: 0;
+  margin: 0 16px;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+main {
+  padding: 0 16px;
 }
 
 
 
 /**
- * Layout Styles
- * The style of the chunk position is written here.
+ * コンポーネント
+ * 部品的なスタイルはここに書きます。
  */
 
+/* overall */
+.line {
+  border-bottom: 1px solid;
+  padding-bottom: 4px;
+  width: 350px;
+}
 
+/* header */
+header {
+  border-bottom: 1px solid;
+}
 
-/**
- * Component Styles
- * The component style is written here.
- */
+.logo {
+  font-family: "Microsoft JhengHei UI", sans-serif;
+  font-size: 24px;
+  padding-left: 32px;
+}
+
+.bio {
+  align-items: center;
+  display: flex;
+}
+
 .bio-icon {
-  max-height: 128px;
-  max-width: 128px;
-  min-height: 64px;
-  min-width: 64px;
+  height: 100%;
+  margin-right: 1em;
+  max-height: 96px;
+  max-width: 96px;
+  min-height: 48px;
+  min-width: 48px;
+  width: 100%;
+}
+
+.bio-icon img {
+  border-radius: 24px;
+}
+
+.names {
+  margin-bottom: 0;
+}
+
+/* links */
+.link {
+  height: 64px;
+  margin-bottom: 20px;
+  margin-right: 0;
+}
+
+.link-meta {
+  align-items: center;
+  display: flex;
+  height: 32px;
+  margin-bottom: 5px;
 }
 
 .link-icon {
-  max-height: 128px;
-  max-width: 128px;
-  min-height: 64px;
-  min-width: 64px;
+  height: 26px;
+  margin-right: 3px;
+  width: 26px;
+}
+
+.link-name {
+  font-weight: 300;
+  padding-left: 4px;
+}
+
+.link-line {
+  transition: border-bottom-color .2s cubic-bezier(0, .55, .45, 1);
+}
+
+/* .link-description {} */
+
+/* footer */
+
+.copyright {
+  padding-right: 32px;
+  text-align: right;
 }
 
 
 
 /**
- * State Styles
- * The style involved in the state is written here.
+ * ステート
+ * ホバーなどの状態に関わるスタイルはここに書きます。
  */
+.link:hover .link-line {
+  border-bottom-color: #888;
+}
 
 
 
 /**
- * Theme Styles
- * The style of the theme, mainly related to color is written here.
+ * テーマ
+ * 色を中心としたテーマ関連のスタイルはここに書きます。
  */
+
+/* overall */
+body {
+  background-color: var(--background-color);
+}
+
 a {
   color: #000;
 }
 
+.line {
+  border-bottom-color: #ccc;
+}
+
+/* header */
+header {
+  background-color: var(--background-color);
+  border-bottom-color: #ccc;
+}
+
+/* profile */
+
+/* links */
+
+
 
 /**
- * Responsive Styles
- * The style for responsive design is written here.
+ * レスポンシブ
+ * レスポンシブ対応するためのスタイルはここに書きます。
  */
 
-/* Mobile S */
-@media only screen and (max-device-width : 320px) {
-}
+/* Mobile */
+@media only screen and (max-width : 425px) {
+  .l-header {
+    margin: 0 auto;
+  }
 
-/* Mobile M */
-@media only screen and (min-device-width : 321px) and (max-device-width : 375px) {
-}
+  .logo {
+    padding-left: 0;
+  }
 
-/* Mobile L */
-@media only screen and (min-width : 376px) and (max-width : 425px) {
+  main {
+    margin: 0 auto;
+    width: 85%;
+  }
+
+  .line {
+    width: 100%;
+  }
 }
 
 /* Tablet */
 @media only screen and (min-width : 426px) and (max-width : 768px) {
+  main {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .line {
+    width: 100%;
+  }
 }
 
 /* LapTop */
 @media only screen and (min-width : 769px) and (max-width : 1024px) {
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+  }
+  .l-profile, .l-links {
+    padding: 0 2%;
+    width: 46%;
+  }
+  footer {
+    bottom: 0;
+    position: absolute;
+    right: 0;
+  }
 }
-
 
 /* LapTop L */
 @media only screen and (min-width : 1025px) {
+  main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .l-profile, .l-links {
+    padding: 0 2%;
+    width: 46%;
+  }
+  footer {
+    bottom: 0;
+    position: absolute;
+    right: 0;
+  }
 }
