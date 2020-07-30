@@ -136,7 +136,7 @@ header {
  * ホバーなどの状態に関わるスタイルはここに書きます。
  */
 .link:hover .link-line {
-  border-bottom-color: #888;
+  border-bottom-color: #aaa;
 }
 
 
