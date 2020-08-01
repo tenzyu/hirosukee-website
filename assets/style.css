@@ -29,8 +29,6 @@ img {
  * 大きなレイアウトのスタイルはここに書きます。
  */
 header {
-  align-items: center;
-  display: flex;
   height: 63px;
   left: 0;
   margin: 0 16px;
@@ -58,8 +56,8 @@ main {
 
 .line {
   border-bottom: 1px solid;
+  max-width: 350px;
   padding-bottom: 4px;
-  width: 350px;
 }
 
 /* header */
@@ -93,35 +91,24 @@ header {
 .link {
   height: 64px;
   margin-bottom: 20px;
-  margin-right: 0;
 }
 
-.link-meta {
-  align-items: center;
-  display: flex;
-  height: 32px;
-  margin-bottom: 5px;
+.link-header {
+  height: 50%;
+  margin-bottom: 4px;
 }
 
 .link-icon {
-  height: 26px;
-  margin-right: 3px;
-  width: 26px;
+  height: 80%;
+  margin-right: 8px;
+  width: auto;
 }
 
 .link-name {
   font-weight: 300;
-  padding-left: 4px;
 }
-
-.link-line {
-  transition: border-bottom-color .2s cubic-bezier(0, .55, .45, 1);
-}
-
-/* .link-description {} */
 
 /* footer */
-
 .copyright {
   padding-right: 32px;
   text-align: right;
@@ -133,6 +120,9 @@ header {
  * ステート
  * ホバーなどの状態に関わるスタイルはここに書きます。
  */
+.link-line {
+  transition: border-bottom-color .2s cubic-bezier(0, .55, .45, 1);
+}
 .link:hover .link-line {
   border-bottom-color: #888;
 }
@@ -163,10 +153,6 @@ header {
   border-bottom-color: #ccc;
 }
 
-/* profile */
-
-/* links */
-
 
 
 /**
@@ -195,7 +181,7 @@ header {
 @media only screen and (min-width : 426px) and (max-width : 768px) {
   main {
     margin: 0 auto;
-    width: 100%;
+    width: 90%;
   }
 
   .line {
@@ -204,32 +190,17 @@ header {
 }
 
 /* LapTop */
-@media only screen and (min-width : 769px) and (max-width : 1024px) {
+@media only screen and (min-width : 769px) {
   main {
     display: flex;
     flex-wrap: wrap;
   }
-  .l-profile, .l-links {
-    padding: 0 2%;
-    width: 46%;
-  }
-  footer {
-    bottom: 0;
-    position: absolute;
-    right: 0;
-  }
-}
 
-/* LapTop L */
-@media only screen and (min-width : 1025px) {
-  main {
-    display: flex;
-    flex-wrap: wrap;
-  }
   .l-profile, .l-links {
     padding: 0 2%;
     width: 46%;
   }
+
   footer {
     bottom: 0;
     position: absolute;
