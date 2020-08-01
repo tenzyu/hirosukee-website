@@ -51,6 +51,11 @@ main {
  */
 
 /* overall */
+.flex {
+  align-items: center;
+  display: flex;
+}
+
 .line {
   border-bottom: 1px solid;
   padding-bottom: 4px;
