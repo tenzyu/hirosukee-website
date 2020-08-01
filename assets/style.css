@@ -4,7 +4,7 @@
  */
 body {
   --background-color: rgb(253, 253, 253);
-  font-family: "Microsoft JhengHei UI", "Arial", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "sans-serif";
+  font-family: "Microsoft JhengHei UI", "Segoe UI Light", "Hiragino Kaku Gothic ProN", "sans-serif";
 }
 
 a {
@@ -65,8 +65,23 @@ header {
   border-bottom: 1px solid;
 }
 
+@font-face {
+	font-family: 'Minecraft';
+	src: url("/assets/fonts/minecraft.woff");
+}
+
+@font-face {
+	font-family: 'Bellany';
+	src: url("/assets/fonts/Bellany.woff");
+}
+
+@font-face {
+	font-family: 'Rosseta';
+	src: url("/assets/fonts/Rosseta.woff");
+}
+
 .header-logo {
-  font-family: "Microsoft JhengHei UI", sans-serif;
+  font-family: "Microsoft JhengHei UI", "Segoe UI Light", "Hiragino Kaku Gothic ProN", "sans-serif";
   font-size: 24px;
   padding-left: 32px;
 }
@@ -120,35 +135,11 @@ header {
  * ステート
  * ホバーなどの状態に関わるスタイルはここに書きます。
  */
-.link-line {
+.link-line , .fact-value , .line , .flex {
   transition: border-bottom-color .2s cubic-bezier(0, .55, .45, 1);
 }
-.link:hover .link-line {
+.link:hover .link-line , .fact-value:hover , .line:hover , .flex:hover {
   border-bottom-color: #aaa;
-}
-
-.fact-value:hover {
-  border-bottom-color: #aaa;
-}
-
-.fact-value {
-  transition: border-bottom-color .2s cubic-bezier(0, .55, .45, 1);
-}
-
-.line:hover {
-  border-bottom-color: #aaa;
-}
-
-.line {
-  transition: border-bottom-color .2s cubic-bezier(0, .55, .45, 1);
-}
-
-.flex:hover {
-  border-bottom-color: #aaa;
-}
-
-.flex {
-  transition: border-bottom-color .2s cubic-bezier(0, .55, .45, 1);
 }
 
 /**
