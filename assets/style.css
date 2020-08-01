@@ -127,7 +127,29 @@ header {
   border-bottom-color: #aaa;
 }
 
+.fact-value:hover {
+  border-bottom-color: #aaa;
+}
 
+.fact-value {
+  transition: border-bottom-color .2s cubic-bezier(0, .55, .45, 1);
+}
+
+.line:hover {
+  border-bottom-color: #aaa;
+}
+
+.line {
+  transition: border-bottom-color .2s cubic-bezier(0, .55, .45, 1);
+}
+
+.flex:hover {
+  border-bottom-color: #aaa;
+}
+
+.flex {
+  transition: border-bottom-color .2s cubic-bezier(0, .55, .45, 1);
+}
 
 /**
  * テーマ
