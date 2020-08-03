@@ -119,6 +119,13 @@ header {
   width: auto;
 }
 
+.icon-link {
+  height: 40%;
+  margin-right: 8px;
+  width: 12px;
+  padding-left: 8px;
+}
+
 .link-name {
   font-weight: 300;
 }
