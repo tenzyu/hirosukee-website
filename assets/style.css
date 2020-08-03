@@ -4,7 +4,9 @@
  */
 body {
   --background-color: rgb(253, 253, 253);
-  font-family: "Microsoft JhengHei UI", "Segoe UI Light", "Hiragino Kaku Gothic ProN", "sans-serif";
+  font-family: "source-han-sans-japanese", "Segoe UI Light", "sans-serif";
+  font-style: normal;
+  font-weight: 200;
 }
 
 a {
@@ -70,18 +72,10 @@ header {
 	src: url("/assets/fonts/minecraft.woff");
 }
 
-@font-face {
-	font-family: 'Bellany';
-	src: url("/assets/fonts/Bellany.woff");
-}
-
-@font-face {
-	font-family: 'Rosseta';
-	src: url("/assets/fonts/Rosseta.woff");
-}
-
 .header-logo {
-  font-family: "Microsoft JhengHei UI", "Segoe UI Light", "Hiragino Kaku Gothic ProN", "sans-serif";
+  font-family: "source-han-sans-japanese", "Segoe UI Light", "sans-serif";
+  font-style: normal;
+  font-weight: 200;
   font-size: 24px;
   padding-left: 32px;
 }
