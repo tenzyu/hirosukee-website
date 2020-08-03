@@ -4,7 +4,7 @@
  */
 body {
   --background-color: rgb(253, 253, 253);
-  font-family: "source-han-sans-japanese", "Segoe UI Light", "sans-serif";
+  font-family: "ヒラギノ角ゴシック", "source-han-sans-japanese", "sans-serif";
   font-style: normal;
   font-weight: 200;
 }
@@ -73,7 +73,7 @@ header {
 }
 
 .header-logo {
-  font-family: "source-han-sans-japanese", "Segoe UI Light", "sans-serif";
+  font-family: "ヒラギノ角ゴシック", "source-han-sans-japanese", "sans-serif";
   font-style: normal;
   font-weight: 200;
   font-size: 24px;
@@ -128,6 +128,10 @@ header {
 .copyright {
   padding-right: 32px;
   text-align: right;
+}
+
+.title {
+  padding-left: 30px;
 }
 
 
