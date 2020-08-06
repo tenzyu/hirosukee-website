@@ -63,6 +63,16 @@ main {
   padding-bottom: 4px;
 }
 
+.line-memo {
+  border-bottom: 1px solid;
+  width: 300px;
+  padding-bottom: 4px;
+}
+
+.memo-value {
+  height: 8px;
+}
+
 /* header */
 header {
   border-bottom: 1px solid;
@@ -135,16 +145,22 @@ header {
   padding-left: 30px;
 }
 
+.page-description {
+  padding-left: 46px;
+}
 
+.link-lists {
+  padding-left: 50px;
+}
 
 /**
  * ステート
  * ホバーなどの状態に関わるスタイルはここに書きます。
  */
-.link-line , .fact-value , .line , .flex {
+.link-line , .fact-value , .line , .flex , .line-memo {
   transition: border-bottom-color .2s cubic-bezier(0, .55, .45, 1);
 }
-.link:hover .link-line , .fact-value:hover , .line:hover , .flex:hover {
+.link:hover .link-line , .fact-value:hover , .line:hover , .flex:hover , .line-memo:hover {
   border-bottom-color: rgb(150, 150, 150);
 }
 
@@ -162,7 +178,7 @@ a {
   color: #000;
 }
 
-.line {
+.line , .line-memo {
   border-bottom-color: rgb(210, 210, 210);
 }
 
