@@ -161,7 +161,7 @@ header {
   transition: border-bottom-color .2s cubic-bezier(0, .55, .45, 1);
 }
 .link:hover .link-line , .fact-value:hover , .line:hover , .flex:hover , .line-memo:hover {
-  border-bottom-color: rgb(180, 180, 180);
+  border-bottom-color: rgb(170, 170, 170);
 }
 
 /**
