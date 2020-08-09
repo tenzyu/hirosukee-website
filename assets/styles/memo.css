@@ -9,15 +9,29 @@
    * コンポーネント
    * 部品的なスタイルはここに書きます。
    */
+.link {
+  margin-bottom: 16px;
+}
+
+.link-header {
+  height: 24px;
+  line-height: 24px;
+}
+
 .link-name {
   font-weight: 400;
-  margin-bottom: 4px;
+}
+
+.link-copy {
+  margin-left: 8px;
+  width: 12px;
 }
 
 .link-value {
   line-height: 1.5;
   word-break: break-all;
 }
+
 
 
 /**
