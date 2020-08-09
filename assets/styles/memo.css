@@ -1,0 +1,55 @@
+/**
+   * レイアウト
+   * 大きなレイアウトのスタイルはここに書きます。
+   */
+
+
+
+/**
+   * コンポーネント
+   * 部品的なスタイルはここに書きます。
+   */
+.link-name {
+  font-weight: 400;
+  margin-bottom: 4px;
+}
+
+.link-value {
+  line-height: 1.5;
+  word-break: break-all;
+}
+
+
+/**
+   * ステート
+   * ホバーなどの状態に関わるスタイルはここに書きます。
+   */
+
+
+
+/**
+   * テーマ
+   * 色を中心としたテーマ関連のスタイルはここに書きます。
+   */
+
+
+
+/**
+   * レスポンシブ
+   * レスポンシブ対応するためのスタイルはここに書きます。
+   */
+
+/* Mobile */
+
+/* Tablet */
+
+/* LapTop */
+@media only screen and (min-width : 769px) {
+  .l-links {
+    padding: 0 2%;
+  }
+
+  .links {
+    padding: 0 2%;
+  }
+}

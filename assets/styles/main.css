@@ -59,24 +59,12 @@ main {
 
 .line {
   border-bottom: 1px solid;
-  max-width: 400px;
   padding-bottom: 4px;
-}
-
-.line-memo {
-  border-bottom: 1px solid;
-  padding-bottom: 4px;
-  width: 300px;
 }
 
 /* header */
 header {
   border-bottom: 1px solid;
-}
-
-@font-face {
-  font-family: "Minecraft";
-  src: url("/assets/fonts/minecraft.woff");
 }
 
 .header-logo {
@@ -85,50 +73,6 @@ header {
   font-style: normal;
   font-weight: 200;
   padding-left: 32px;
-}
-
-/* profile */
-.bio-icon {
-  border-radius: 24px;
-  height: 100%;
-  margin-right: 16px;
-  max-height: 96px;
-  max-width: 96px;
-  min-height: 48px;
-  min-width: 48px;
-  width: 100%;
-}
-
-.fact-name {
-  margin-bottom: 2px;
-}
-
-/* links */
-.link {
-  height: 64px;
-  margin-bottom: 20px;
-}
-
-.link-header {
-  height: 50%;
-  margin-bottom: 4px;
-}
-
-.link-icon {
-  height: 80%;
-  margin-right: 8px;
-  width: auto;
-}
-
-.icon-link {
-  height: 40%;
-  margin-right: 8px;
-  padding-left: 8px;
-  width: 12px;
-}
-
-.link-name {
-  font-weight: 300;
 }
 
 /* footer */
@@ -143,10 +87,10 @@ header {
  * ステート
  * ホバーなどの状態に関わるスタイルはここに書きます。
  */
-.link-line, .fact-value, .line, .flex, .line-memo {
+.line {
   transition: border-bottom-color .2s cubic-bezier(0, .55, .45, 1);
 }
-.link:hover .link-line, .fact-value:hover, .line:hover, .flex:hover, .line-memo:hover {
+.line:hover {
   border-bottom-color: rgb(170, 170, 170);
 }
 
@@ -164,7 +108,7 @@ a {
   color: #000;
 }
 
-.line, .line-memo {
+.line {
   border-bottom-color: rgb(210, 210, 210);
 }
 
@@ -177,9 +121,9 @@ header {
 
 
 /**
- * レスポンシブ
- * レスポンシブ対応するためのスタイルはここに書きます。
- */
+   * レスポンシブ
+   * レスポンシブ対応するためのスタイルはここに書きます。
+   */
 
 /* Mobile */
 @media only screen and (max-width : 425px) {
@@ -202,29 +146,10 @@ header {
 @media only screen and (min-width : 426px) and (max-width : 768px) {
   main {
     margin: 0 auto;
-    width: 350px;
+    width: 400px;
   }
 
   .line {
     width: 100%;
-  }
-}
-
-/* LapTop */
-@media only screen and (min-width : 769px) {
-  main {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .l-profile, .l-links {
-    padding: 0 2%;
-    width: 46%;
-  }
-
-  footer {
-    bottom: 0;
-    position: absolute;
-    right: 0;
   }
 }
