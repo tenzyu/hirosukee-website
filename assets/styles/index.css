@@ -80,8 +80,17 @@
   }
 
   .l-profile, .l-links {
-    padding: 0 2%;
-    width: 46%;
+    width: 400px;
+  }
+
+  .l-profile {
+    margin-left: auto;
+    padding-right: 16px;
+  }
+
+  .l-links {
+    margin-right: auto;
+    padding-left: 16px;
   }
 
   footer {
