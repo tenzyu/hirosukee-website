@@ -10,6 +10,6 @@ function copy(element) {
   selection.removeAllRanges();
   setTimeout(reset, 2500);
   function reset() {
-    element.innerText = originalText
+    element.innerHTML = '<span class="line">' + originalText + "</span>"
     }
 }
