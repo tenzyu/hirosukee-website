@@ -25,6 +25,14 @@ img {
   width: 100%;
 }
 
+button {
+  background-color: rgba(0, 0, 0, .0);
+  border: none;
+  cursor: pointer;
+  font-weight: 200;
+  outline: none;
+  padding: 0;
+}
 
 
 /**
