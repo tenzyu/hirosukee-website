@@ -69,10 +69,6 @@ main {
   width: 300px;
 }
 
-.memo-value {
-  height: 8px;
-}
-
 /* header */
 header {
   border-bottom: 1px solid;
