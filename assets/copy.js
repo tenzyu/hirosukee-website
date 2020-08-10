@@ -5,11 +5,4 @@ function copy(element) {
   selection.removeAllRanges();
   selection.addRange(range);
   document.execCommand('copy');
-  let originalText = element.innerText
-  element.innerText = "Copied!";
-  selection.removeAllRanges();
-  setTimeout(reset, 2500);
-  function reset() {
-    element.innerHTML = '<span class="line">' + originalText + "</span>"
-    }
 }
