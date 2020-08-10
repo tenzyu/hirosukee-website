@@ -33,6 +33,10 @@
   opacity: 60%;
 }
 
+.link-copy:active {
+  opacity: 40%;
+}
+
 .link-value {
   line-height: 1.5;
   word-break: break-all;
