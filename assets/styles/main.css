@@ -3,11 +3,14 @@
  * 全体的なタグのスタイルはここに書きます。
  */
 body {
-  --background-color: rgb(253, 253, 253);
-  font-family: "Microsoft JhengHei UI", "Arial", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "sans-serif";
+  --background-color: rgb(250, 250, 250);
+  font-family: "ヒラギノ角ゴシック", "source-han-sans-japanese", "sans-serif";
+  font-style: normal;
+  font-weight: 200;
 }
 
 a {
+  outline: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* no highlighting */
   text-decoration: none;
 }
@@ -56,7 +59,6 @@ main {
 
 .line {
   border-bottom: 1px solid;
-  max-width: 350px;
   padding-bottom: 4px;
 }
 
@@ -66,46 +68,11 @@ header {
 }
 
 .header-logo {
-  font-family: "Microsoft JhengHei UI", sans-serif;
+  font-family: "ヒラギノ角ゴシック", "source-han-sans-japanese", "sans-serif";
   font-size: 24px;
+  font-style: normal;
+  font-weight: 200;
   padding-left: 32px;
-}
-
-/* profile */
-.bio-icon {
-  border-radius: 24px;
-  height: 100%;
-  margin-right: 16px;
-  max-height: 96px;
-  max-width: 96px;
-  min-height: 48px;
-  min-width: 48px;
-  width: 100%;
-}
-
-.fact-name {
-  margin-bottom: 2px;
-}
-
-/* links */
-.link {
-  height: 64px;
-  margin-bottom: 20px;
-}
-
-.link-header {
-  height: 50%;
-  margin-bottom: 4px;
-}
-
-.link-icon {
-  height: 80%;
-  margin-right: 8px;
-  width: auto;
-}
-
-.link-name {
-  font-weight: 300;
 }
 
 /* footer */
@@ -120,11 +87,11 @@ header {
  * ステート
  * ホバーなどの状態に関わるスタイルはここに書きます。
  */
-.link-line {
+.line {
   transition: border-bottom-color .2s cubic-bezier(0, .55, .45, 1);
 }
-.link:hover .link-line {
-  border-bottom-color: #888;
+.line:hover {
+  border-bottom-color: rgb(170, 170, 170);
 }
 
 
@@ -144,21 +111,21 @@ a {
 }
 
 .line {
-  border-bottom-color: #ccc;
+  border-bottom-color: rgb(210, 210, 210);
 }
 
 /* header */
 header {
   background-color: var(--background-color);
-  border-bottom-color: #ccc;
+  border-bottom-color: rgb(210, 210, 210);
 }
 
 
 
 /**
- * レスポンシブ
- * レスポンシブ対応するためのスタイルはここに書きます。
- */
+   * レスポンシブ
+   * レスポンシブ対応するためのスタイルはここに書きます。
+   */
 
 /* Mobile */
 @media only screen and (max-width : 425px) {
@@ -181,29 +148,10 @@ header {
 @media only screen and (min-width : 426px) and (max-width : 768px) {
   main {
     margin: 0 auto;
-    width: 350px;
+    width: 400px;
   }
 
   .line {
     width: 100%;
-  }
-}
-
-/* LapTop */
-@media only screen and (min-width : 769px) {
-  main {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .l-profile, .l-links {
-    padding: 0 2%;
-    width: 46%;
-  }
-
-  footer {
-    bottom: 0;
-    position: absolute;
-    right: 0;
   }
 }
