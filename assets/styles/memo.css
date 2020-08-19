@@ -9,39 +9,6 @@
    * コンポーネント
    * 部品的なスタイルはここに書きます。
    */
-.link {
-  margin-bottom: 16px;
-}
-
-.link-header {
-  height: 24px;
-  line-height: 24px;
-}
-
-.link-name {
-  font-weight: 400;
-}
-
-.link-copy {
-  transition: opacity .2s cubic-bezier(0, .55, .45, 1);
-  opacity: 40%;
-  margin-left: 8px;
-  width: 16px;
-}
-
-.link-copy:hover {
-  opacity: 60%;
-}
-
-.link-copy:active {
-  opacity: 80%;
-}
-
-.link-value {
-  line-height: 1.5;
-  word-break: break-all;
-}
-
 
 
 /**
@@ -68,8 +35,3 @@
 /* Tablet */
 
 /* LapTop */
-@media only screen and (min-width : 769px) {
-  .l-links {
-    padding: 0 2%;
-  }
-}

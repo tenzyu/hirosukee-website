@@ -1,6 +1,6 @@
 /* overall */
 .line {
-  max-width: 400px;
+  max-width: 300px;
 }
 
 /* profile */
@@ -17,34 +17,6 @@
 
 .fact-name {
   margin-bottom: 2px;
-}
-
-/* links */
-.link {
-  height: 64px;
-  margin-bottom: 20px;
-}
-
-.link-header {
-  height: 50%;
-  margin-bottom: 4px;
-}
-
-.link-icon {
-  height: 80%;
-  margin-right: 8px;
-  width: auto;
-}
-
-.icon-link {
-  height: 40%;
-  margin-right: 8px;
-  padding-left: 8px;
-  width: 12px;
-}
-
-.link-name {
-  font-weight: 300;
 }
 
 
@@ -79,9 +51,9 @@
     flex-wrap: wrap;
   }
 
-  .l-profile, .l-links {
-    padding: 0 2%;
-    width: 46%;
+  .l-profile {
+    margin-left: 40%;
+    margin-top: 72px;
   }
 
   footer {
