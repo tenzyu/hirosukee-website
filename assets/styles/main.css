@@ -1,230 +1,99 @@
-/**
- * ベース
- * 全体的なタグのスタイルはここに書きます。
- */
-body {
-  --background-color: rgb(250, 250, 250);
-  font-family: "ヒラギノ角ゴシック", "source-han-sans-japanese", "sans-serif";
-  font-style: normal;
-  font-weight: 200;
-  overflow: hidden;
-  color: rgb(10, 10, 10);
+/* 基本デザイン */
+
+body , .profile-box::before {
+    font-family: 'Segoe UI Light', 'Meiryo';
+    color: #fefefe;
+    margin: 0;
+    background-image: url("../images/background-1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-attachment: fixed;
+    transition: 300ms cubic-bezier(.15,.6,.31,1);
 }
 
-a {
-  outline: none;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* no highlighting */
-  text-decoration: none;
+main {
+    margin: auto;
 }
 
-ul {
-  list-style-type: none;
-  padding-left: 0;
+footer {
+    bottom: 0;
+    position: absolute;
+    right: 0;
+    padding-right: 12px;
+    padding-bottom: 4px;
 }
 
-img {
-  height: 100%;
-  width: 100%;
-}
-
-
-
-/**
- * レイアウト
- * 大きなレイアウトのスタイルはここに書きます。
- */
-header {
-  height: 63px;
-  left: 0;
-  position: sticky;
-  top: 0;
-  z-index: 5;
-  box-shadow: 1px 1px 48px 0 rgb(14, 14, 14);
-}
-
-.background {
-  position: relative;
-  margin: auto;
-  width: 100%;
-  height: 40%;
-}
-
-.l-profile {
-  position: absolute;
-  padding: 16px;
-  padding-bottom: 24px;
-  top: 40%;
-  left: 10%;
-  right: auto;
-  -webkit-transform : translate(-50%,-50%);
-  transform : translate(-50%,-50%);
-  border: 2px solid;
-  border-color: rgb(210, 210, 210);
-  background: rgb(250, 250, 250);
-  border-radius: 24px;
-  box-shadow: 8px 8px 48px 0 rgb(14, 14, 14);
-}
-
-.link {
-  width: 138px;
-  height: 24px;
-  padding-top: 6px;
-  border-radius: 24px;
-}
-
-.discord {
-  padding-top: 4px;
-  padding-bottom: 4px;
-  background-color: #7289DA;
-}
-
-.twitter {
-  padding-top: 4px;
-  padding-bottom: 4px;
-  margin-left: 10px;
-  background-color: #03A9F4;
-}
-
-.youtube {
-  padding-top: 4px;
-  padding-bottom: 4px;
-  background-color: red;
-}
-
-.github {
-  padding-top: 4px;
-  padding-bottom: 4px;
-  margin-left: 10px;
-  background-color: black;
-}
-
-.soundcloud {
-  padding-top: 4px;
-  padding-bottom: 4px;
-  background-color: #FF7700;
-}
-
-.steam {
-  padding-top: 4px;
-  padding-bottom: 4px;
-  margin-left: 10px;
-  background-color: #052842;
-}
-
-/**
- * コンポーネント
- * 部品的なスタイルはここに書きます。
- */
-
-/* overall */
-.flex {
-  align-items: center;
-  display: flex;
-}
-
-.flex-2 {
-  align-items: center;
-  display: flex;
-  margin-top: 12px;
-}
+/* クラス別デザイン */
 
 .line {
-  border-bottom: 1px solid;
-  padding-bottom: 4px;
+    border-bottom: 1px solid;
+    padding-bottom: 4px;
 }
 
-/* header */
-header {
-  border-bottom: 1px solid;
+.profile-box {
+    position: relative;
+
+    /* border */
+    border: solid 1px;
+    border-color: rgba(250,250,250, .1);
+    box-shadow: 0 2px 5px rgba(#000,.5);
+    border-radius: 12px;
+    margin: 100px auto 10px auto;
+    width: 360px;
+    height: 480px;
+    display: block;
+    text-align: center;
 }
 
-.header-logo {
-  font-family: "ヒラギノ角ゴシック", "source-han-sans-japanese", "sans-serif";
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 200;
-  padding-left: 32px;
-}
-
-/* footer */
-.copyright {
-  padding-right: 32px;
-  text-align: right;
-  color: rgb(250, 250, 250);
-}
-
-
-
-/**
- * ステート
- * ホバーなどの状態に関わるスタイルはここに書きます。
- */
-.line , header {
-  transition: .2s cubic-bezier(0, .55, .45, 1);
-}
-.line:hover , header:hover {
-  border-bottom-color: rgb(170, 170, 170);
-}
-
-
-
-/**
- * テーマ
- * 色を中心としたテーマ関連のスタイルはここに書きます。
- */
-
-/* overall */
-body {
-  background-color: var(--background-color);
-}
-
-a {
-  color: #000;
-}
-
-.line {
-  border-bottom-color: rgb(210, 210, 210);
-}
-
-/* header */
-header {
-  background-color: var(--background-color);
-  border-bottom-color: rgb(210, 210, 210);
-}
-
-
-
-/**
-   * レスポンシブ
-   * レスポンシブ対応するためのスタイルはここに書きます。
-   */
-
-/* Mobile */
-@media only screen and (max-width : 425px) {
-  .header-logo {
-    margin: 0 auto;
-    padding-left: 0;
-  }
-
-  main {
-    text-align:center;
-    margin: 0 auto;
-    width: 85%;
-  }
-
-  .line {
+.profile-box::before {
+    /* box */
+    content: "";
+    z-index: -1;
+    position: absolute;
     width: 100%;
-  }
+    height: 100%;
+    padding: 0;
+    display: block;
+
+    /* effects */
+    -webkit-filter: blur(4px);
+    -ms-filter: blur(4px);
+    filter: blur(4px);
 }
 
-/* Tablet */
-@media only screen and (min-width : 426px) and (max-width : 768px) {
-  main {
-    margin: 0 auto;
-    width: 400px;
-  }
+.prof-icon {
+    border-radius: 12px;
+    transform: scale(70%);
+    margin-right: 60%;
+}
 
-  .line {
-    width: 100%;
-  }
+.prof-name {
+    position: absolute;
+    top: 32px;
+    left: 50%;
+}
+
+.prof-desc {
+    position: absolute;
+    top: 108px;
+    left: 50%;
+}
+
+.prof-hobby {
+    text-align: left;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+.prof-form {
+    text-align: left;
+    padding-top: 24px;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 110%;
 }
