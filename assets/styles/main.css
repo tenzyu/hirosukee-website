@@ -188,6 +188,7 @@ footer {
     .profile-box::before {
         padding-left: 4px;
         margin: 20px auto 10px auto;
+        margin: -8px;
     }
 }
 
