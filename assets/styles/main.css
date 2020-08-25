@@ -1,7 +1,7 @@
 /* 基本デザイン */
 
 body , .profile-box::before {
-    font-family: 'Segoe UI Light', 'Meiryo';
+    font-family: 'Segoe UI Light', sans-serif;
     color: #fefefe;
     margin: 0;
     background-image: url("../images/background-1.png");
@@ -159,3 +159,21 @@ footer {
     display: flex;
     margin-top: 12px;
     }
+
+/* レスポンシブ */
+
+/* Mobile */
+@media only screen and (max-width : 425px) {
+    .prof-icon {
+        transform: scale(50%);
+    }
+
+    .profile-box {
+        padding-left: 4px;
+    }
+}
+
+  /* Tablet */
+@media only screen and (min-width : 426px) and (max-width : 768px) {
+
+}
