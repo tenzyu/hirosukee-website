@@ -163,13 +163,9 @@ footer {
 /* レスポンシブ */
 
 /* Mobile */
-@media only screen and (max-width : 425px) {
+@media only screen and (max-width : 100%) {
     .prof-icon {
         transform: scale(20%);
-    }
-
-    .profile-box {
-        margin-left: 4px;
     }
 }
 
