@@ -41,7 +41,7 @@ footer {
     border-radius: 12px;
     margin: 100px auto 10px auto;
     width: 360px;
-    height: 480px;
+    height: 560px;
     display: block;
     text-align: center;
 }
@@ -59,7 +59,7 @@ footer {
     /* effects */
     -webkit-filter: blur(4px);
     -ms-filter: blur(4px);
-    filter: blur(4px);
+    filter: blur(3px);
 }
 
 .prof-icon {
@@ -97,3 +97,65 @@ footer {
     font-weight: bold;
     font-size: 110%;
 }
+
+.link-button {
+    margin-left: 38px;
+    margin-top: 18px;
+}
+
+.link {
+    width: 138px;
+    height: 24px;
+    padding-top: 6px;
+    border-radius: 24px;
+}
+
+.discord {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    background-color: #7289DA;
+}
+
+.twitter {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-left: 10px;
+    background-color: #03A9F4;
+}
+
+.youtube {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    background-color: red;
+}
+
+.github {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-left: 10px;
+    background-color: black;
+}
+
+.soundcloud {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    background-color: #FF7700;
+}
+
+.steam {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-left: 10px;
+    background-color: #052842;
+}
+
+.flex {
+    align-items: center;
+    display: flex;
+    }
+
+.flex-2 {
+    align-items: center;
+    display: flex;
+    margin-top: 12px;
+    }
