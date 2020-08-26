@@ -30,7 +30,6 @@ footer {
 .line {
     border-bottom: 1px solid;
     padding-bottom: 4px;
-    box-shadow: 0 2px 5px rgba(0,0,0,.5);
 }
 
 .profile-box {
