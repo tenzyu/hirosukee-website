@@ -13,6 +13,10 @@ body , .profile-box::before {
     transition: 300ms cubic-bezier(.15,.6,.31,1);
 }
 
+a {
+    outline: none;
+}
+
 main {
     margin: auto;
 }
