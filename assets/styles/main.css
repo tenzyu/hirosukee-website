@@ -2,7 +2,7 @@
 
 body , .profile-box::before {
     font-family: 'Segoe UI Light', sans-serif;
-    text-shadow: 1px 2px 3px #000;
+    text-shadow: 1px 2px 6px #000;
     color: #fefefe;
     margin: 0;
     background-image: url("../images/background-1.png");
@@ -42,7 +42,7 @@ footer {
     /* border */
     border: solid 1px;
     border-color: rgba(250,250,250, .1);
-    box-shadow: 0 2px 5px rgba(0,0,0,.5);
+    box-shadow: 0 2px 6px rgba(0,0,0,.3);
     border-radius: 12px;
     margin: 100px auto 10px auto;
     width: 360px;
@@ -80,7 +80,7 @@ footer {
     margin-right: 60%;
     margin-left: 28px;
     margin-bottom: 24px;
-    box-shadow: 0 2px 5px rgba(0,0,0,.5);
+    box-shadow: 0 2px 6px rgba(0,0,0,.3);
 }
 
 .prof-name {
@@ -123,7 +123,7 @@ footer {
     height: 24px;
     padding-top: 6px;
     border-radius: 24px;
-    box-shadow: 0 2px 5px rgba(0,0,0,.5);
+    box-shadow: 0 2px 6px rgba(0,0,0,.3);
 }
 
 .discord {
