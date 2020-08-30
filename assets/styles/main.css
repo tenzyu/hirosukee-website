@@ -1,7 +1,12 @@
 /* 基本デザイン */
 
+@font-face {
+    font-family: "Noto Sans JP";
+    src: url("/assets/fonts/NotoSansJP-Light.woff"),
+}
+
 body , .profile-box::before {
-    font-family: 'Segoe UI Light', sans-serif;
+    font-family: 'Noto Sans JP', 'Segoe UI Light', sans-serif;
     text-shadow: 1px 2px 6px #000;
     color: #fefefe;
     margin: 0;
@@ -67,9 +72,9 @@ footer {
     display: block;
 
     /* effects */
-    -webkit-filter: blur(8px);
-    -ms-filter: blur(8px);
-    filter: blur(8px);
+    -webkit-filter: blur(4px);
+    -ms-filter: blur(4px);
+    filter: blur(4px);
     margin: -8px;
 }
 
