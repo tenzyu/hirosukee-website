@@ -9,6 +9,7 @@ body , .profile-box::before {
     font-family: 'Noto Sans JP', 'Segoe UI Light', sans-serif;
     text-shadow: 1px 2px 6px #000;
     color: #fefefe;
+    overflow: hidden;
     margin: 0;
     background-image: url("../images/background-1.png");
     background-repeat: no-repeat;
