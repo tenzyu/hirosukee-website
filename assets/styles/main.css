@@ -73,9 +73,9 @@ footer {
     display: block;
 
     /* effects */
-    -webkit-filter: blur(4px);
-    -ms-filter: blur(4px);
-    filter: blur(4px);
+    -webkit-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
     margin: -8px;
 }
 
