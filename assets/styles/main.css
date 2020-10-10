@@ -16,6 +16,7 @@ body , .profile-box::before {
     background-size: cover;
     background-position-x: center;
     background-attachment: fixed;
+    position: relative;
     transition: 300ms cubic-bezier(.15,.6,.31,1);
 }
 
