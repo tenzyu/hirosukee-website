@@ -10,7 +10,7 @@ This is a website that has written my Profile and Links.
 ### Author
 
 * Hirosuke
-* Twitter : <https://twitter.com/Hirosuke907>
+* Twitter : <https://twitter.com/_Hirosuke_>
 
 ### License
 
